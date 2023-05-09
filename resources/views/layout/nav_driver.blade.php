@@ -52,9 +52,8 @@
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Sign</a>
                     <div class="dropdown-menu bg-light m-0">
                         <a href="{{route('login')}}" class="dropdown-item">Login</a>
-                        <a href="{{route('register')}}" class="dropdown-item">Register</a>
                         <a href="#" class="dropdown-item">Profile</a>
-                        <a href="#" class="dropdown-item">Logout</a>
+                        <a href="{{route('logout')}}" class="dropdown-item">Logout</a>
                     </div>
                 </div>
                 <a href="#" class="nav-item nav-link">Trip</a>

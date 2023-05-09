@@ -27,6 +27,9 @@ class Home extends Controller
         if(Auth::guard('customer')->attempt(['email'=>$request['email'],'password'=>$request['password']])){
             return redirect()->route('home')->with('success','تم تسجيل الدخول.');
         }
+        else if(Auth::guard('driver')->attempt(['email'=>$request['email'],'password'=>$request['password']])){
+            return redirect()->route('list-req')->with('success','تم تسجيل الدخول.');
+        }
         return back()->withErrors([
             'message' => 'الايميل او الباس غلط ياليفه',
         ])->onlyInput('message');

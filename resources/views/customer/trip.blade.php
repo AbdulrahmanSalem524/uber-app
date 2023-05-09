@@ -53,7 +53,7 @@
                         <div class="row g-3">
                             <div class="col-sm-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control border-0 bg-light" style="border-radius: 10px" name="feedback" >
+                                    <input type="text" class="form-control border-0 bg-light" style="border-radius: 10px" name="customer_feedback" >
                                     <label for="gname">Feedback</label>
                                 </div>
                             </div>

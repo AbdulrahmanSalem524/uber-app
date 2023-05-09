@@ -37,16 +37,21 @@ class Customer_Controller extends Controller
     }
     public function feedback(Request $request){
         $id_trip=Trip::latest()->select('id')->get();
-        $data['finished']=1;
+        $id=0;
+        foreach ($id_trip as $d){
+            $id=$d->id;
+        }
+        $data=$request->validate([
+            'customer_feedback'=>'required',
+        ]);
         $data['driver_id']=$request->driver_id;
-        $data['customer_feedback']=$request->feedback;
-       Trip::where('id',$id_trip)->update($data);
-        return redirect()->route('index');
+       Trip::where('id','=',$id)->update($data);
+        return redirect(route('home'));
     }
 
     public function logout()
     {
         auth()->guard('customer')->logout();
-        return redirect(route('index'));
+        return redirect(route('home'));
     }
 }
