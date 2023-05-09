@@ -49,28 +49,5 @@ class Home extends Controller
         Customer::create($data);
         return redirect()->route('home')->with('success','تم انشاء حساب بنجاح برجاء تسجيل الدخول.');
     }
-    public function request(){
-        if(!Auth::guard('customer')){
-            return back()->withErrors([
-                'message' => 'you should register first',
-            ])->onlyInput('message');
-        }
-        else{
-            return view('request');
-        }
-    }
-    public function request_done(Request $request){
-        $data=$request->validate([
-            'start-loc'=>'required',
-            'end-loc'=>'required',
-            'type'=>'required',
-        ]);
-        $data['customer_id']=Auth::guard('customer')->id();
-        Trip::create($data);
-        return redirect()->route('lists');
-    }
-    public function lists(){
-        $data['driver']=Driver::select('id','name','phone','car_model','car_color','car_plat')->get();
-            return view('lists')->with($data);
-    }
+
 }

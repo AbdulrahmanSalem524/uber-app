@@ -63,7 +63,7 @@
                         <div class="position-relative">
                             <img class="img-fluid" src="img/bmw.jpg" alt="">
                             <div class="team-social text-center">
-                             <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i class="fab fa-instagram"></i></a>
+                             <a class="btn btn-square btn-outline-primary border-2 m-1" href="{{route('trip',$d->id)}}"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                         <div class="bg-light text-center p-4">

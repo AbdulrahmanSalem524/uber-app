@@ -47,8 +47,7 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="{{route('home')}}" class="nav-item nav-link ">Home</a>
-                <a href="{{route('request')}}" class="nav-item nav-link">Request</a>
-                <a href="{{route('lists')}}" class="nav-item nav-link">Lists</a>
+                <a href="{{route('list-req')}}" class="nav-item nav-link">Lists</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Sign</a>
                     <div class="dropdown-menu bg-light m-0">

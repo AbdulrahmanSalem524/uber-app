@@ -63,13 +63,13 @@
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="text" style="border-radius: 10px" class="form-control border-0 bg-light" id="start-loc" placeholder="Start-Location">
+                                    <input type="text" style="border-radius: 10px" class="form-control border-0 bg-light" id="start_loc" name="start_loc" placeholder="Start-Location">
                                     <label for="name">Start-Location</label>
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-floating">
-                                    <input type="text" style="border-radius: 10px" class="form-control border-0 bg-light" name="end-loc" id="end-loc" placeholder="End-Location">
+                                    <input type="text" style="border-radius: 10px" class="form-control border-0 bg-light" name="end_loc" id="end_loc" placeholder="End-Location">
                                     <label for="cname">End-Location</label>
                                 </div>
                             </div>
